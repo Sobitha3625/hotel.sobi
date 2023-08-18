@@ -1,0 +1,569 @@
+
+
+:root
+{ 
+--black: #333;
+--lighting-color: #cdaa7c;
+--box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+*
+{
+	font-family: 'Roboto',sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border:  none;
+	outline: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+}
+html
+{
+ font-size: 62.5%;
+ overflow: scroll;
+ overflow-x: hidden; 
+ scroll-behavior: smooth;
+
+
+}
+
+/*navbar style start*/
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: var(--black);
+	padding: 1rem 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: var(--box-shadow: );
+	color: red;
+
+}
+
+header .logo img
+{
+	height: auto;
+}
+header .navbar a
+{
+	font-size: 2.1rem;
+	padding: .5rem 2.1rem;
+	color: var(--light-color);
+	border: .1rem solid transparent;
+
+}
+header .navbar  a.active,
+header .navbar a:hover
+{
+	color: gold;
+	border: .1rem solid rgba(205,170,130,0,4);
+}
+header .icons i
+{
+	cursor: pointer;
+	margin-left: .6rem;
+	height: 4.5rem;
+	width: 4.5rem;
+	line-height: 5.0rem;
+	background: var(--light-color);
+
+
+}
+
+
+
+
+
+.Home .Home-slider .slide1
+
+{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	justify-content: flex-start;
+    color: whitesmoke;
+	background-image: url('burger-with-potatoes-with-herbs-spices.jpg');
+	 background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 
+	
+		}	
+.Home .Home-slider .slide1 .content
+{
+	text-align: center;
+	padding: 15rem;
+	font-size: 16pt
+}
+.Home .Home-slider .slide1 .content p
+{
+	color: lightyellow;
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	padding: .5rem 0;
+	line-height: 1.5;
+	font-weight: 100
+
+
+}
+.btn
+{
+	display: inline-block;
+	font-size: 1.8rem;
+	color: green;
+	border: .1rem solid rgb(206, 170, 125,0.3);
+	background: transparent;
+	cursor: pointer;
+	padding: .8rem 3rem;
+}
+
+
+
+/*welcome style start*/
+section
+{
+	padding: 2rem 2%;
+	background: black
+
+}
+.heading
+{
+	text-align: center;
+	justify-items: center;
+	justify-content: center;
+	color: green;
+	font-size: 2.5rem;
+	padding: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+
+
+}
+.sub-heading
+{
+	text-align: center;
+	color: red;
+	font-size: 3.2rem;
+	padding: .3rem 2rem;
+	font-weight: 300;
+	margin-bottom: 4rem;
+	background: var(--black);
+	display: inline-block
+}
+.welcome .box-container
+{
+	display: flex;
+	gap: 1.5rem;
+	background-size: cover;
+
+
+
+}
+.welcome .box-container .box
+{
+	width: 33%;
+	background: var(--black);
+	box-shadow: var(--red);
+	text-align: center;
+	padding-bottom: 1%;
+	background-size: cover;
+    font-size: 2.3rem;
+    
+}
+.welcome .box-container .box .image
+{
+	height: 25rem;
+	width: 100%;
+	overflow: hidden;
+
+	 position:relative;
+ 
+	background-size: cover;
+	display:flex;
+
+}
+
+.welcome .box-container .box .image:hover 
+{
+	transform: scale(1.1);
+}
+
+.welcome .box-container .box .content
+{
+	padding: 2rem;
+	padding-top: 2rem
+}
+
+.welcome .box-container .box .content h3
+{
+	color: red;
+	font-size: 2.2rem;
+	font-weight: 300
+}
+.welcome .box-container .box .content p
+{
+	color: bisque;
+	padding: 2rem 0;
+	font-size: 1.2;
+	line-height: 1.2
+}
+    
+     
+
+
+/*welcome style end*/
+
+/*menu start*/
+
+.our-Menu
+{
+	background: url("top-view-yogurt-spoon-with-copy-space.jpg") left top no-repeat;
+	position: relative;
+	background-size: cover;
+	text-align: center;
+	color: green;
+	font-size: 2.5rem
+}
+
+.our-Menu .Menu-container
+{
+	padding: 3rem 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(50rem, 2fr) );
+	gap: 5rem 10rem;
+}
+
+
+.our-Menu .Menu-container .items .item-name
+{
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem,0;
+	margin-top: .5rem
+}
+
+
+.our-Menu .Menu-container .items .Menu-item
+{
+	padding: : .5rem 0;
+
+}
+
+.our-Menu .Menu-container .items .item-name h2
+{
+	font-size: 3rem;
+	color: whitesmoke;
+	font-weight: 300;
+	text-decoration: underline
+	
+}
+
+.our-Menu .Menu-container .items .item-Menu h3
+{
+	font-size: 2rem;
+	color: red;
+	display: inline-block
+}
+
+
+.our-Menu .Menu-container .items .item-name span
+{
+	width: 37%;
+	display: inline-block;
+	border: 1px dotted #e5e5e5
+}
+
+.our-Menu .Menu-container .items .item-Menu ul
+{
+	
+	font-size: 1.5rem;
+	list-style: none;
+	padding: .8rem 0;
+	color: red;
+	font-weight: 200
+
+}
+ .our-Menu .Menu-container .items .item-Menu ul li a
+ {
+ 	color:green;
+ 	font-weight: 300;
+ 	font-size: 2.4rem
+ }
+
+
+/*menu ends*/
+/*chef starts*/
+.our-Team
+{
+	background: url("henry-be-5PRQsEGkE10-unsplash.jpg");
+    background-size: cover;
+    position: relative
+
+
+}
+.our-chef
+{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(30rem, 1fr));
+	grid-gap: 3.7rem 
+}
+.our-chef .items .image img
+{
+	width: 100%;
+	background-size: cover
+}
+.our-chef .items
+
+
+{
+	position: relative;
+	z-index: 3;
+	overflow: hidden
+}
+.our-chef .items:before
+{
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: none;
+	top: 0;left: 0;right: 0;bottom: 0;
+	background: red;
+	z-index: 5;
+}
+
+.our-chef .items .chef-info
+
+{
+	color: whitesmoke
+}
+
+.our-chef .items .chef-info span
+{
+	text-align: center;
+	color: goldenrod;
+	font-size: 2.3rem
+
+
+}
+
+
+.our-chef .items .chef-info h3
+{
+	font-size: 2.3rem
+}
+
+
+
+/*chef ends*/
+/*reserve start*/
+.Reservation 
+{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap
+}
+.Reservation .image
+{
+	width: 55%;
+	background: url('pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+
+.Reservation .form
+{
+	background: #181818;
+	width: 45%;
+	padding: 9rem 7%
+}
+.Reservation .form h1
+{
+	color: #fff;
+}
+.Reservation .form-holder
+{
+	display: flex;
+	grid-gap: 3rem;
+	width: 100%
+}
+.Reservation .form form input,
+.Reservation .form form select
+{
+	display: block;
+	margin: 2rem 0;
+	width: 100%;
+	background: none;
+	border-bottom: .1rem solid #b7b3b3;
+	color: red;
+	 font-size: 1.9rem;
+	 font-weight: 300
+}
+
+
+.Closure
+{
+	background: url('bar-316626_1280.jpg');
+	background-size: cover;
+	position: relative;
+	padding: 12rem
+}
+.Closure h1
+{
+font-size: 3.2rem
+
+}
+.Closure h3
+{
+	font-weight: 400
+}
+/*reserve end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+/*media query*/
+@media (max-width: 991px)
+{
+	html
+	{
+		font-size: 60%
+	}
+	header
+	{
+		padding: 1rem 2rem;
+
+	}
+	heading .logo img
+	{
+		height: 7rem;
+
+	}
+}
+@media (max-width: 780px)
+{
+	 header .logo img
+	 {
+	 	height: 7rem;
+
+	 }
+	 header ,icons #menu
+	 {
+	 	display: inline-block;
+
+	 }
+	 header .navbar
+	 {
+	 	position: absolute;
+	 	top: 100%;
+	 	left: 0;
+	 	right: 0;
+	 	background: #eee;
+	 	border-top: .1rem solid rgba(207,170,124,0.2);
+	 	border-bottom: .1rem solid rgba(207,170,124,0.2);
+	 	padding: 1rem;
+	 	clip-path: polygon(0 0,100% 0,100% 0,0 0)
+
+}
+header .navbar.active
+{
+	clip-path: polygon(0 0,100% 0,100% ,0 100%)
+
+}
+header .navbar a
+{
+	display: block;
+	padding: 1.5rem;
+	margin: 1rem;
+	font-size: 3rem;
+	background: var(--black)
+}
+
+.Home .Home-slider .slide
+{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	justify-content: flex-start;
+}
+
+
+.Home .Home-slider .slide1
+{
+	justify-content: center;
+	height: 80vh
+}
+
+
+
+.Home .Home-slider .slide1 .content
+{
+	padding: 0
+}
+
+
+.Home .Home-slider .slide1 .content h1
+{
+	font-size: 7rem
+}
+
+
+
+
+
+.zoom-img .img-card {
+  position: absolute;
+  overflow: hidden;
+}
+.img-card img {
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+.card:hover .zoom-img img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
+/*wecome sectiom*/
+.welcome .box-container
+{
+	flex-wrap: wrap;
+
+
+}
+.welcome .box-container .box
+{
+	width: 100%;
+}
